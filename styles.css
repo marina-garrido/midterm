@@ -1,0 +1,234 @@
+* {
+  --primary-font-color: #212121;
+  --negative-title-color: #FFFCFC;
+  --primary: #5BB079;
+  --secondary: #111B47;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+header {
+  height: 198px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 500;
+  color: var(--negative-title-color);
+}
+
+.nav-img {
+  display: block;
+  max-width: 150px;
+  margin-bottom: 1px;
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-item {
+  color: var(--primary-font-color);
+  text-decoration: none;
+}
+
+#banner {
+  width: 100%;
+  height: 502px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('resizedofficial.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 56px 16px 81px 101px;
+}
+
+.about-content {
+  max-width: 540px;
+}
+
+.about-title {
+  color: var(--primary);
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 66px;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  color: var(--primary-font-color);
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 29px;
+}
+
+.about-buttons-row {
+  display: flex;
+  text-decoration: none;
+}
+
+.about-button {
+  width: 189px;
+  text-decoration: none;
+  color: #FFF;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.about-button.services-button {
+background-color: #111B47;
+color: #FFF;
+border: 2px solid var(--secondary);
+margin-right: 39px;
+text-decoration: none;
+}
+
+
+.contact-button {
+  background-color: #FFF;
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.about-img {
+  max-width: 20%; 
+  height: auto;
+}
+
+#how {
+  width: 100%;
+  height: 502px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('compost2_30.png');
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+#how .title {
+  margin-bottom: 50px;
+}
+
+.steps-row {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+  width: 100%;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 258px;
+  color: #FFF;
+  text-align: center;
+}
+
+.step img {
+  max-width: 145px;
+}
+
+footer {
+  background-color: var(--primary);
+  height: 216px;
+  padding: 68px 165px 32px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 46px;
+  border-bottom: 1px solid #CDD1D4;
+  margin-bottom: 20px;
+}
+
+
+.footer-nav a {
+  text-decoration: none;
+  margin-right: 25px;
+  color: #FFF;
+}
+
+.service {
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.content {
+display: flex;
+align-items: center;
+}
+
+.service img {
+max-width: 100%;
+height: auto;
+margin-right: 20px; 
+}
+
+.text-container {
+flex: 1;
+}
+
+.my-contain {
+max-width: 100%;
+margin: 0 auto; 
+}
+
+.nav-item:hover {
+color: #5BB079; 
+}
+
+.about-button:hover,
+.footer-button:hover,
+.services-button:hover,
+.contact-button:hover,
+.cta-btn:hover {
+background-color: var(--primary); 
+color: #FFF; 
+}
