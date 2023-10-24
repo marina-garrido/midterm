@@ -10,13 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style/styles.css">
+  <link rel="stylesheet" href="styles.css">
   
 </head>
 <body>
   <header>
     <div class="nav-content">
-      <img class ="logo" src="images/logo.png">
+      <img class ="about-img" src="logo.png" width="20%">
       <nav class="nav-list">
         <a class="nav-item" href="?">Home</a>
         <a class="nav-item" href="?">Catalog</a>
@@ -30,53 +30,63 @@
   </header>
 
 <main>
-  <section id="about">
-    <img src="logo.jpeg" width="600">
+  <section id="about" class="about-section">
+    <img src="coffeebag1.png" width="412" height="537" class="coffee-bag">
     <div class="about-content">
       <h2 class="about-title">The best coffee you will ever have.</h2>
-      <p class="about-text">
-        Brazilian coffee beans are like no other. 
-        The heart and soul of every cup, they embody the essence of Brazil's 
-        lush landscapes, vibrant culture, and rich history. Our passion is to 
-        bring you the extraordinary taste of this remarkable land, one sip at 
-        a time. At Brazil Brew Co., we source the finest Brazilian coffee beans 
-        from the rolling hills of Minas Gerais to the dense Amazon rainforest. 
-        Each bean tells a story, soaked in the tropical sun and nurtured by the 
-        fertile soil.
-      </p>
+      <p class="about-text">Brazilian coffee beans are like no other. The heart and soul of every cup, they embody the essence of Brazil's lush landscapes, vibrant culture, and rich history. Our passion is to bring you the extraordinary taste of this remarkable land, one sip at a time. At Brazil Brew Co., we source the finest Brazilian coffee beans from the rolling hills of Minas Gerais to the dense Amazon rainforest. Each bean tells a story, soaked in the tropical sun and nurtured by the fertile soil.</p>
       <div class="about-buttons-row">
-        <button class="about-button services-button">
-          <a href="?" style="text-decoration: none; color: white;">Learn More</a>
-        </button>
-        
-        <button class="about-button contact-button">
-          <a href="?" style="text-decoration: none; color: #212121; ">Contact us</a>
-        </button>
+        <button class="custom-button">
+          <a href="" style="text-decoration: none; color: white;">Learn More > </a>
       </div>
     </div>
   </section>
 
-  <section id="how">
-    <h2 class="title">We make composting fun.</h2>
-    <div class="steps-row">
-      <div class="step">
-        <img src="foodscraps.png">
-        <p>1. You throw away your food scarps in the container we provide.</p>
-      </div>
-      <div class="step">
-        <img src="can.png">
-        <p>2. We pick it up every week and swap it with a new container.</p>
-      </div>
-      <div class="step">
-        <img style="margin-bottom: 34px;" src="cycle.png">
-        <p>3. We give it your compost or share with our farmers partners, and they send you sample produce made with your own compost!</p>
-      </div>
+  <section id="background-section" style="background-image: url('bannerhome.png');" width=300px>
+    <div class="text-overlay">
+      <h2>Empowering Communities,<br> Sustaining the Earth</h2>
+      <p>At Brazil Brew Co., we're not just passionate about coffee; we're deeply rooted in Brazil's cultural tapestry. We source our beans locally, forging meaningful connections with Brazilian farmers who share our devotion to quality and sustainability. Our commitment to Brazil extends beyond delicious coffee; it's about fostering a bond with the communities that cultivate these remarkable beans. By working directly with local farmers, we empower them with fair wages and ethical practices, preserving the country's rich coffee traditions and way of life.</p>
+      <a href="#" class="read-more-button">Read More ></a>
     </div>
   </section>
+  
+  <section id="best-sellers-section">
+    <h3>Checkout Our Best Sellers!</h3>
+    <div class="product-container">
+      <div class="product">
+        <img src="product1.png" alt="Product 1">
+        <div class="product-details">
+          <p>Minas Gerais Blend<br>500 g <br>$11.89</p>
+          <input type="number" min="1" value="1"><br>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="product1.png" alt="Product 2">
+        <div class="product-details">
+          <p>Bahia Blend<br>500 g <br>$11.89</p>
+          <input type="number" min="1" value="1"><br>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="product1.png" alt="Product 3">
+        <div class="product-details">
+          <p>Goiás Blend<br>500 g <br>$11.89</p>
+          <input type="number" min="1" value="1"><br>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="shop-all-button">
+      <a href="#all-products">Shop All Products</a>
+    </div>
+  </section>
+  
 
   <footer>
     <div class="footer-main">
-      <span>©2023 Earth Smiles Company</span>
+      <span>©Brew Brazil Co.</span>
     </div>
 
     <div class="footer-nav">
