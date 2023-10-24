@@ -12,6 +12,9 @@
 body {
   background-color: #fff;
 }
+
+/* Index.html */
+
 .about-img {
   max-width: 40%;
   height: auto;
@@ -327,3 +330,22 @@ margin: 0 auto;
 background-color: var(--primary); 
 color: #FFF; 
 }
+
+/* Catalog.html*/
+
+#catalog-section{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  color: white;
+}
+
+#catalog-overlay{
+  display: flex; 
+  flex-direction: column; 
+  gap: 15px;
+}
+
+
