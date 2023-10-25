@@ -334,6 +334,7 @@ color: #FFF;
   justify-content: center;
   align-items: center; 
   text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('images/coffeenew1.jpg');
   color: white;
 }
 
@@ -342,6 +343,7 @@ color: #FFF;
   flex-direction: column;
   flex-direction: column; 
   gap: 15px;
+  margin: 0 200px;
 }
 
 #catalog-overlay h2{
@@ -418,4 +420,32 @@ h3{
   background-color: #3fd169;
 }
 
+/* brewguide.html */
+
+#brewguide-section{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/brewguidebanner.jpeg');
+  color: white;
+}
+
+
+#brewguide-overlay{
+  display: flex; 
+  flex-direction: column;
+  flex-direction: column; 
+  gap: 15px;
+  margin: 0 200px;
+}
+
+#brewguide-overlay h2{
+  font-size: 50px;
+}
+
+#brewguide-overlay p{
+  font-size: 18px;
+}
 
