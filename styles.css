@@ -259,31 +259,117 @@ header {
 
 
 footer {
-  background-color: var(--primary);
-  height: 216px;
-  padding: 68px 165px 32px;
+  background-color: #3D5A98;
+  height: 300px;
+  padding: 16px 0;
   color: #fff;
   font-size: 14px;
   line-height: 24px;
   display: flex;
   flex-direction: column;
-
+  position: relative;
 }
 
 .footer-main {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 46px;
-  border-bottom: 1px solid #CDD1D4;
-  margin-bottom: 20px;
+  align-items: center;
 }
 
+.footer-main::before {
+  content: "";
+  border-top: 1px solid #FFF;
+  margin: 20px 0;
+  display: block;
+}
+
+
+.footer-main p {
+  margin: 10px 0;
+  flex: 1; 
+}
+
+
+.left-column {
+  flex: 1;
+  margin-left: 100px; 
+}
+
+.right-column {
+  flex: 1; 
+  margin-left: 100px;
+}
+
+/* Styling for the navigation list */
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 10px; /* Adjust the spacing between list items */
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
 
 .footer-nav a {
   text-decoration: none;
   margin-right: 25px;
   color: #FFF;
+  flex-basis: 45%; /* Adjust the width of each column as needed */
 }
+
+.subscribe {
+  width: 431px; 
+  height: 94px; 
+  margin-left: 100px;
+  flex-shrink: 0;
+}
+
+.subscribe p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #fff;
+  margin-top: 56px;
+  margin-bottom: 20px;
+}
+
+.subscription-form {
+  display: flex;
+  align-items: center;
+}
+
+.subscription-form input {
+  width: 70%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 20px; /* Added border-radius for rounded edges */
+  background-color: transparent;
+  color: #fff;
+}
+
+.subscribe-button {
+  width: 30%;
+  padding: 10px;
+  background-color: #FD5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; /* Added border-radius for rounded edges */
+}
+
+.copyright {
+  margin-top: 80px;
+  margin-left: 100px;
+}
+
 
 .service {
 text-align: center;
