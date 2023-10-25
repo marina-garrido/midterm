@@ -199,11 +199,6 @@ header {
   width: 200px;
 }
 
-.product p {
-  font-size: 16px;
-  margin-top: 10px;
-}
-
 .product .product-details {
   padding: 10px;
 }
@@ -212,7 +207,7 @@ header {
   font-size: 18px;
   font-weight: 600;
   color: black;
-  margin: 0;
+  margin-top: 20px;
 }
 
 .product .product-details input[type="number"] {
@@ -331,7 +326,7 @@ background-color: var(--primary);
 color: #FFF; 
 }
 
-/* Catalog.html*/
+/* Catalog.html (I haven't made it mobile responsive yet)*/
 
 #catalog-section{
   display: flex; 
@@ -344,8 +339,83 @@ color: #FFF;
 
 #catalog-overlay{
   display: flex; 
+  flex-direction: column;
   flex-direction: column; 
   gap: 15px;
+}
+
+#catalog-overlay h2{
+  font-size: 50px;
+}
+
+#catalog-overlay p{
+  font-size: 18px;
+}
+
+.allblend-container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  margin-bottom: 70px;
+}
+
+h3{
+  margin-top: 70px;
+  margin-left: 75px;
+  font-size: 38px;
+}
+
+.darkblend-container, .mediumblend-container, .lightblend-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.darkblend, .mediumblend, .lightblend{
+  width: 300px;
+  height: 600px;
+  padding: 20px;
+  background-color: rgb(234, 233, 233);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.allblend-container img{
+  width: 200px;
+}
+
+.allblend-container p{
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.allblend-container .product-details input[type="number"] {
+  width: 60px;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #26B24D;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.allblend-container .product-details button {
+  display: flex;
+  width: 174px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background: #26B24D;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.allblend-container .product-details button:hover {
+  background-color: #3fd169;
 }
 
 
