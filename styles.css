@@ -64,6 +64,11 @@ header {
   text-decoration: none;
 }
 
+.nav-item:hover {
+  text-decoration: none;
+  color: #39e169;
+}
+
 #about {
   display: flex;
   align-items: center;
