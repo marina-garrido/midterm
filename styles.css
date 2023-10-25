@@ -449,3 +449,14 @@ h3{
   font-size: 18px;
 }
 
+#brewtype{
+  display: flex;
+}
+
+#brewtype-details{
+  flex-grow: 2;
+}
+
+#brewtype-img{
+  flex-grow: 1;
+}
