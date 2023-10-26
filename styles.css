@@ -526,7 +526,7 @@ h3{
 }
 
 
-#brewguide-overlay{
+.brewguide-overlay{
   display: flex; 
   flex-direction: column;
   flex-direction: column; 
@@ -534,26 +534,33 @@ h3{
   margin: 0 200px;
 }
 
-#brewguide-overlay h2{
+.brewguide-overlay h2{
   font-size: 50px;
 }
 
-#brewguide-overlay p{
+.brewguide-overlay p{
   font-size: 18px;
 }
 
-#brewtype{
+.brewtypes-container{
+  display: flex; 
+  flex-direction: column;
+}
+.brewtype{
   display: flex;
 }
 
-#brewtype-details{
-  flex-grow: 2;
+.brewtype-details{
+  flex: 2;
 }
 
-#brewtype-img{
-  flex-grow: 1;
+.brewtype-img{
+  flex: 1;
+  max-width: 100%;
+  height: auto;
 }
 
+/* subscription.html */
 
 #subscription-section {
     display: flex; 
