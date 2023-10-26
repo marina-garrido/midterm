@@ -644,13 +644,14 @@ h3{
     justify-content: center;
     margin-left: 5px;
     font-weight: bold;
-    line-height: 1.8;
+    line-height: 2;
 
   }
 
   .plan-list{
     margin-left: 15px;
     font-size: 16px;
+    line-height: 1.8;
   }
 
   .plan-price {
