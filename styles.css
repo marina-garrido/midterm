@@ -419,7 +419,7 @@ background-color: var(--primary);
 color: #FFF; 
 }
 
-/* Catalog.html (I haven't made it mobile responsive yet)*/
+/* catalog.html*/
 
 #catalog-section{
   display: flex; 
