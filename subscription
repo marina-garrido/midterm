@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Brazil Brew Co.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="mystyles.css">
+  
+</head>
+<body>
+  <header>
+    <div class="nav-content">
+      <img class ="about-img" src="images/logo.png" width="20%">
+      <nav class="nav-list">
+        <a class="nav-item" href="?">Home</a>
+        <a class="nav-item" href="?">Catalog</a>
+        <a class="nav-item" href="?">Subscription</a>
+        <a class="nav-item" href="?">Brew Guide</a>
+        <a class="nav-item" href="?">Gift Cards</a>
+        <a class="nav-item" href="?">Contact Us</a>
+        <a class="nav-item" href="?">Cart</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="subscription-section" style="background-image: url('images/bagcoffeedark.jpg'); height: 500px;  width: 100%;">
+      <div id="subscription-overlay">
+          <h2>SUBSCRIPTION</h2> 
+          <p class="sub-cap">At Brazil Brew Co., we believe that enjoying your favorite Brazilian coffee should be as effortless as it is delightful. That's why we've introduced our Coffee Subscription service, designed to elevate your coffee experience and make every cup an event to look forward to.</p>
+      </div>
+    </section>
+
+    <section id="beans-subscribe">
+        <div class="subscribe-first">
+            <h4>Why Choose Our Coffee Subscription:</h4>
+            <br>
+            <div class="why-subscription-blurb"></div>
+                <p class="why-sub-text">• Never Run Out: With our subscription service, you'll never have to worry about running low on your favorite Brazilian coffee.</p>
+                <p class="why-sub-text">• Consistency: Enjoy a consistent coffee experience. Our subscription plans guarantee that you receive the same high-quality coffee you love, brewed from the freshest beans.</p>
+                <p class="why-sub-text">• Customizable: Tailor your subscription to suit your preferences.</p>
+                <p class="why-sub-text">• Save and Simplify: Coffee subscription offers cost savings and simplifies your coffee supply.</p>
+            </div>
+        </div>
+        <img src="images/coffeebag1.png" width="310" height="400" class="sub-img">
+    </section>
+
+    <section id="sub-plan-section">
+        <div class="plan-container">
+            <div class="plan">
+                <h5>PLAN 1</h5>
+                <br>
+                <p class="plan-text-h">Details:</p>
+                <ul class="plan-list">
+                  <li>Delivery Frequency: Monthly</li>
+                  <li>Coffee Selection: Two different Brazilian coffee selections (blends) per month</li>
+                  <li>Customization: Adjust your preferences anytime</li>
+                </ul>
+                <p class="plan-text-h">Benefits:</p>
+                <ul class="plan-list">
+                  <li>Explore a wide range of Brazilian coffee flavors and profiles</li>
+                  <li>Enjoy the convenience of monthly coffee deliveries.</li>
+                  <li>Enhance your coffee knowledge and palate.</li>
+                </ul>
+                <br>
+                <p class="plan-price">$18.99/month</p>
+                <button>Add to Cart</button>
+
+            </div>
+            <div class="plan">
+                <h5>PLAN 2</h5>
+                <br>
+                <p class="plan-text-h">Details:</p>
+                <ul class="plan-list">
+                  <li>Delivery Frequency: Bi-weekly</li>
+                  <li>Coffee Selection: One Brazilian dark roasted beans bag twice a monthsh</li>
+                  <li>Customization: Adjust your preferences anytime</li>
+                </ul>
+                <p class="plan-text-h">Benefits:</p>
+                <ul class="plan-list">
+                  <li>Experience the passion of Brazilian espresso in every cup</li>
+                  <li>Perfect your "cafezinho" and other espresso-based drinks..</li>
+                  <li>Never run out of premium Brazilian espresso beans with monthly deliveries.</li>
+                </ul>
+                <br>
+                <p class="plan-price">$20.99/month</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <br><br><br>
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer-main">
+          <span>©Brew Brazil Co.</span>
+        </div>
+        <div class="footer-nav">
+          <a href="?">Home</a>
+          <a href="?">Our Services</a>
+          <a href="?">Contact</a>
+        </div>
+      </footer>
+    </main>
+</body>
+</html>
+    
