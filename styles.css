@@ -671,7 +671,7 @@ h3{
     line-height: 150%; /* 48px */
   }
 
-  .plan button {
+  .plan-button {
     display: flex;
     width: 174px;
     height: 40px;
