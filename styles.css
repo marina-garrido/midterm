@@ -630,7 +630,7 @@ h3{
 
   .plan {
     width: 300px;
-    height: 500px;
+    height: 650px;
     padding: 20px;
     background-color: rgb(234, 233, 233);
     border-radius: 10px;
@@ -645,12 +645,14 @@ h3{
     justify-content: center;
     margin-left: 5px;
     font-weight: bold;
+    line-height: 2;
 
   }
 
   .plan-list{
     margin-left: 15px;
     font-size: 16px;
+    line-height: 1.8;
   }
 
   .plan-price {
@@ -699,3 +701,63 @@ h3{
     margin-left: 75px;
     font-size: 38px;
   }
+
+.contact-cap {
+    margin-left: 50px;
+  }
+
+  h6 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+  }
+
+  .form-input {
+    display: block;
+  }
+
+  #inputbox {
+    height: 70px;
+    padding-left: 15px;
+    width: 500px;
+    flex-shrink: 0;
+    border: 1.5px solid #000;
+  }
+
+  #messbox {
+    height:200px;
+    padding-left: 15px;
+    padding-top: 15px;
+    width: 500px;
+    flex-shrink: 0;
+    border: 1.5px solid #000;
+  }
+  /* contact-cap button */
+  #contactButton {
+    display: flex;
+    width: 174px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: #26B24D;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 10px auto;
+    margin-left: 20px;
+  }
+
+  #purpose {
+    height:70px;
+    padding-left: 15px;
+    width: 500px;
+    flex-shrink: 0;
+    border: 1.5px solid #000;
+  }
+
+
