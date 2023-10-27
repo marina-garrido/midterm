@@ -552,6 +552,7 @@ h3{
 
 .brewtype-details{
   flex: 2;
+  padding: 50px;
 }
 
 .brewtype-img{
