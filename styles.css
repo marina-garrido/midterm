@@ -552,13 +552,25 @@ h3{
 
 .brewtype-details{
   flex: 2;
-  padding: 50px;
+  padding: 80px;
+  line-height: 30px;
+}
+
+.brewtype-details h3{
+  margin-left: -30px;
+  margin-bottom: 30px;
+}
+
+.brewtype-details p{
+  margin-left: -30px;
+  margin-top: 10px;
 }
 
 .brewtype-img{
   flex: 1;
   max-width: 100%;
   height: auto;
+  padding: 80px; 
 }
 
 /* subscription.html */
