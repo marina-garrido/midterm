@@ -222,8 +222,14 @@
 
   }
 
+
   #getinBlurb {
     font-family: 'Montserrat', sans-serif;
+  }
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+
   }
 
 </style>
@@ -254,7 +260,7 @@
   </main>
   <br><br>
   <div class="contact-cap">
-    <h6>Get in Touch</h6>
+    <h1>Get in Touch</h1>
     <br>
     <p id="getinBlurb">If you have any questions or need help, please fill out the form below. We will try to answer within 1 business day.</p>
   <br><br>
@@ -283,14 +289,25 @@
   <script>
     function submitContactForm() {
      const arr = document.getElementsByName("1");
+     let x = true;
      var theEmail = arr[1].value;
-      for (var i = 0; i < arr.length; i++) {
-        arr[i].value = "";
+      for(var i = 0; i < arr.length; i++) {
+        if (arr[i].value =="") {
+          x = false;
+        }
       }
-      if (!theEmail.includes('@')){
-        alert("Invalid email");
+      if (x) {
+        for (var i = 0; i < arr.length; i++) {
+          arr[i].value = "";
+        }
+        if (!theEmail.includes('@')){
+          alert("Invalid email");
+        }
+      }else {
+        alert("All sections must be filled out");
       }
-    }
+      }
+
   </script>
   
 </body>
