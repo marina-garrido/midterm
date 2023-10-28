@@ -11,6 +11,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap">
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
+  * {
+    --primary-font-color: #212121;
+    --primary: #26B24D;
+  }  
+
+  body {
+    margin: 0;
+  }
+
+  main {
+    margin-top: 2rem;
+  }
+
+  .nav-item {
+    color: var(--primary-font-color);
+    text-decoration: none;
+  }
+
+  .nav-item:hover {
+    text-decoration: none;
+    color: #39e169;
+  }
 
   footer {
     background-color: #3D5A98;
@@ -232,20 +254,164 @@
 
   }
 
+  #menu-button {
+    display: none; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1000;
+  }
+
+  #menu-button .bar {
+    width: 30px;
+    height: 3px;
+    background: var(--primary-font-color);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  #myNav-list {
+    display: flex;
+  }
+
+  #contactButton:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+
+  .subscription-form input {
+    width: 70%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius: 20px; 
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .subscribe-button {
+    width: 30%;
+    padding: 10px;
+    background-color: #FD5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; 
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  @media screen and (max-width: 600px) {
+    .about-img {
+      width: 30%;
+    }
+
+    #menu-button {
+      display: block;
+    }
+
+    #myNav-list {
+      display: none;
+    }
+
+    #menu-button.active + #myNav-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #inputbox, #messbox {
+      width: 90%;
+    }
+
+    #purpose {
+      width: 95%;
+    }
+
+    .contact-cap {
+      margin-left: 0;
+      text-align: center;
+      padding: 30px;
+    }
+
+    footer {
+      height: 100%;
+      padding: 0;
+    }
+
+    .footer-main {
+      display: block;
+      text-align: center;
+    }
+
+    .left-column {
+      display: block;
+      margin: 2rem;
+    }
+
+    .footer-main::before {
+      display: none;
+    }
+
+    .subscribe {
+      display: contents;
+      margin-left: 0;
+    }
+
+    .subscribe p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .subscription-form {
+      display: block;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .copyright {
+      margin: 0;
+      margin-top: 2rem;
+    }
+
+    .right-column {
+      margin: 0;
+      margin-bottom: 2rem;
+    }
+
+    .footer-nav a {
+      margin: 0;
+    }
+
+    .subscribe-button {
+      margin-top: 10px;
+    }
+  }
+
 </style>
 </head>
 <body>
   <header>
     <div class="nav-content">
       <img class ="about-img" src="images/logo.png" width="20%">
-      <nav class="nav-list">
-        <a class="nav-item" href="/midterm/index.html">Home</a>
-        <a class="nav-item" href="/midterm/catalog.html">Catalog</a>
-        <a class="nav-item" href="/midterm/subscription.html">Subscription</a>
-        <a class="nav-item" href="/midterm/brew-guide.html">Brew Guide</a>
-        <a class="nav-item" href="/midterm/gift-cards.html">Gift Cards</a>
-        <a class="nav-item" href="/midterm/contact.html">Contact Us</a>
-        <a class="nav-item" href="/midterm/cart.html">Cart</a>
+      
+      <button id="menu-button">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+
+      <nav class="nav-list" id="myNav-list">
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="catalog.html">Catalog</a>
+        <a class="nav-item" href="subscription.html">Subscription</a>
+        <a class="nav-item" href="brewguide.html">Brew Guide</a>
+        <a class="nav-item" href="gift-cards.html">Gift Cards</a>
+        <a class="nav-item" href="contact.html">Contact Us</a>
+        <a class="nav-item" href="cart.html">Cart</a>
       </nav>
     </div>
   </header>
@@ -339,3 +505,13 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const menuButton = document.getElementById('menu-button');
+  
+    menuButton.addEventListener('click', function () {
+      this.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
