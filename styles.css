@@ -124,6 +124,11 @@ header {
   cursor: pointer;
 }
 
+.custom-button:hover {
+  opacity: .8;
+  transition: all 0.3s ease;
+}
+
 .logo {
   max-width: 5%;
   height: auto;
@@ -170,6 +175,11 @@ header {
   font-weight: 700;
   display: inline-block;
   margin-top: 20px;
+}
+
+.read-more-button:hover {
+  color: antiquewhite;
+  transition: all 0.3s ease;
 }
 
 #best-sellers-section {
@@ -307,14 +317,13 @@ footer {
   margin-left: 100px;
 }
 
-/* Styling for the navigation list */
 .footer-nav ul {
   list-style: none;
   padding: 0;
 }
 
 .footer-nav li {
-  margin-bottom: 10px; /* Adjust the spacing between list items */
+  margin-bottom: 10px;
 }
 
 .footer-nav {
@@ -328,7 +337,7 @@ footer {
   text-decoration: none;
   margin-right: 25px;
   color: #FFF;
-  flex-basis: 45%; /* Adjust the width of each column as needed */
+  flex-basis: 45%;
 }
 
 .subscribe {
@@ -357,7 +366,7 @@ footer {
   padding: 10px;
   font-size: 14px;
   border: 1px solid white;
-  border-radius: 20px; /* Added border-radius for rounded edges */
+  border-radius: 20px; 
   background-color: transparent;
   color: #fff;
 }
@@ -369,7 +378,12 @@ footer {
   color: #fff;
   border: none;
   cursor: pointer;
-  border-radius: 20px; /* Added border-radius for rounded edges */
+  border-radius: 20px; 
+}
+
+.subscribe-button:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease;
 }
 
 .copyright {
@@ -554,10 +568,8 @@ h3{
   flex-grow: 1;
 }
 
-/* Add this to your existing CSS code */
-/* Style for the menu button */
 #menu-button {
-  display: block; /* Show the menu button */
+  display: none; 
   background: none;
   border: none;
   cursor: pointer;
@@ -574,23 +586,172 @@ h3{
   transition: 0.4s;
 }
 
-/* Hide the navigation menu by default */
 #myNav-list {
-  display: none;
+  display: flex;
 }
 
-/* Adjust this style for small screens (max-width: 600px) */
+/*
+  Mobile-friendly css
+*/
+
 @media screen and (max-width: 600px) {
-  /* Hide the navigation menu initially */
+  .about-img {
+    width: 30%;
+  }
+
+  #menu-button {
+    display: block;
+  }
+
   #myNav-list {
     display: none;
   }
 
-  /* Show the navigation menu when the button is clicked */
   #menu-button.active + #myNav-list {
     display: flex;
-    flex-direction: column; /* Stack navigation items vertically */
-    gap: 10px; /* Add spacing between navigation items */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #about {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .coffee-bag {
+    width: 50%;
+    height: 50%;
+    margin: 0;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-buttons-row {
+    justify-content: center;
+  }
+
+  #background-section {
+    background-position: 0;
+    padding-left: 0;
+    padding: 2rem;
+  }
+
+  .text-overlay {
+    width: 100%;
+  }
+
+  #best-sellers-section {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  #best-sellers-section h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .product-container {
+    display: block;
+    margin-left: 6.5rem;
+  }
+
+  .product {
+    margin-bottom: 2rem;
+  }
+
+  footer {
+    height: 100%;
+    padding: 0;
+  }
+
+  .footer-main {
+    display: block;
+    text-align: center;
+  }
+
+  .left-column {
+    display: block;
+    margin: 2rem;
+  }
+
+  .footer-main::before {
+    display: none;
+  }
+
+  .subscribe {
+    display: contents;
+    margin-left: 0;
+  }
+
+  .subscribe p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .subscription-form {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copyright {
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  .right-column {
+    margin: 0;
+  }
+
+  .footer-nav a {
+    margin: 0;
+  }
+
+  .subscribe-button {
+    margin-top: 10px;
+  }
+
+  .darkblend-container, .mediumblend-container, .lightblend-container {
+    display: contents;
+  }
+
+  .allblend-container {
+    gap: 0;
+  }
+
+  .darkblend, .mediumblend, .lightblend {
+    margin-left: 4.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .allblend-container h3 {
+    font-size: 30px;
+    margin-bottom: 2rem;
+  }
+
+  #beans-subscribe {
+    display: contents;
+    text-align: center;
+  }
+
+  .sub-img {
+    width: 0;
+    margin-right: 0;
+  }
+
+  .why-subscription-blurb {
+    margin-right: 10;
+  }
+
+  .brewguide-overlay {
+    padding: 30px;
   }
 }
 

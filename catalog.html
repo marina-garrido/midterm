@@ -17,14 +17,21 @@
   <header>
     <div class="nav-content">
       <img class ="about-img" src="images/logo.png" width="20%">
-      <nav class="nav-list">
-        <a class="nav-item" href="/midterm/index.html">Home</a>
-        <a class="nav-item" href="/midterm/catalog.html">Catalog</a>
-        <a class="nav-item" href="/midterm/subscription.html">Subscription</a>
-        <a class="nav-item" href="/midterm/brew-guide.html">Brew Guide</a>
-        <a class="nav-item" href="/midterm/gift-cards.html">Gift Cards</a>
-        <a class="nav-item" href="/midterm/contact.html">Contact Us</a>
-        <a class="nav-item" href="/midterm/cart.html">Cart</a>
+      
+      <button id="menu-button">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+
+      <nav class="nav-list" id="myNav-list">
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="catalog.html">Catalog</a>
+        <a class="nav-item" href="subscription.html">Subscription</a>
+        <a class="nav-item" href="brewguide.html">Brew Guide</a>
+        <a class="nav-item" href="gift-cards.html">Gift Cards</a>
+        <a class="nav-item" href="contact.html">Contact Us</a>
+        <a class="nav-item" href="cart.html">Cart</a>
       </nav>
     </div>
   </header>
@@ -153,5 +160,13 @@
     </div>
   </footer>
 </main>
+
+<script>
+  const menuButton = document.getElementById('menu-button');
+
+  menuButton.addEventListener('click', function () {
+    this.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
