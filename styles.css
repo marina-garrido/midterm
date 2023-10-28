@@ -554,6 +554,46 @@ h3{
   flex-grow: 1;
 }
 
+/* Add this to your existing CSS code */
+/* Style for the menu button */
+#menu-button {
+  display: block; /* Show the menu button */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  z-index: 1000;
+}
+
+#menu-button .bar {
+  width: 30px;
+  height: 3px;
+  background: var(--primary-font-color);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Hide the navigation menu by default */
+#myNav-list {
+  display: none;
+}
+
+/* Adjust this style for small screens (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  /* Hide the navigation menu initially */
+  #myNav-list {
+    display: none;
+  }
+
+  /* Show the navigation menu when the button is clicked */
+  #menu-button.active + #myNav-list {
+    display: flex;
+    flex-direction: column; /* Stack navigation items vertically */
+    gap: 10px; /* Add spacing between navigation items */
+  }
+}
+
 
 #subscription-section {
     display: flex; 

@@ -17,6 +17,13 @@
   <header>
     <div class="nav-content">
       <img class ="about-img" src="images/logo.png" width="20%">
+
+      <button id="menu-button">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+
       <nav class="nav-list" id="myNav-list">
         <a class="nav-item" href="/midterm/index.html">Home</a>
         <a class="nav-item" href="/midterm/catalog.html">Catalog</a>
@@ -111,4 +118,13 @@
       </div>
     </div>
   </footer>
+
+<script>
+  const menuButton = document.getElementById('menu-button');
+
+  menuButton.addEventListener('click', function () {
+    this.classList.toggle('active');
+  });
+</script>
+
 </body>
