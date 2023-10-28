@@ -17,7 +17,14 @@
   <header>
     <div class="nav-content">
       <img class ="about-img" src="images/logo.png" width="20%">
-      <nav class="nav-list">
+
+      <button id="menu-button">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+
+      <nav class="nav-list" id="myNav-list">
         <a class="nav-item" href="/midterm/index.html">Home</a>
         <a class="nav-item" href="/midterm/catalog.html">Catalog</a>
         <a class="nav-item" href="/midterm/subscription.html">Subscription</a>
@@ -90,7 +97,7 @@
         <div class="subscribe" style="width: 431px; height: 94px;">
           <p>Subscribe to get emails about our new products and sales!</p>
           <div class="subscription-form">
-            <input type="email" placeholder="Enter email">
+            <input type="email" placeholder="Enter email" style="">
             <button class="subscribe-button">Subscribe</button>
           </div>
         </div>
@@ -111,6 +118,13 @@
       </div>
     </div>
   </footer>
-</main>
+
+<script>
+  const menuButton = document.getElementById('menu-button');
+
+  menuButton.addEventListener('click', function () {
+    this.classList.toggle('active');
+  });
+</script>
+
 </body>
-</html>

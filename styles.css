@@ -419,7 +419,7 @@ background-color: var(--primary);
 color: #FFF; 
 }
 
-/* catalog.html*/
+/* Catalog.html (I haven't made it mobile responsive yet)*/
 
 #catalog-section{
   display: flex; 
@@ -526,7 +526,7 @@ h3{
 }
 
 
-.brewguide-overlay{
+#brewguide-overlay{
   display: flex; 
   flex-direction: column;
   flex-direction: column; 
@@ -534,46 +534,66 @@ h3{
   margin: 0 200px;
 }
 
-.brewguide-overlay h2{
+#brewguide-overlay h2{
   font-size: 50px;
 }
 
-.brewguide-overlay p{
+#brewguide-overlay p{
   font-size: 18px;
 }
 
-.brewtypes-container{
-  display: flex; 
-  flex-direction: column;
-}
-.brewtype{
+#brewtype{
   display: flex;
 }
 
-.brewtype-details{
-  flex: 2;
-  padding: 80px;
-  line-height: 30px;
+#brewtype-details{
+  flex-grow: 2;
 }
 
-.brewtype-details h3{
-  margin-left: -30px;
-  margin-bottom: 30px;
+#brewtype-img{
+  flex-grow: 1;
 }
 
-.brewtype-details p{
-  margin-left: -30px;
-  margin-top: 10px;
+/* Add this to your existing CSS code */
+/* Style for the menu button */
+#menu-button {
+  display: block; /* Show the menu button */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  z-index: 1000;
 }
 
-.brewtype-img{
-  flex: 1;
-  max-width: 100%;
-  height: auto;
-  padding: 80px; 
+#menu-button .bar {
+  width: 30px;
+  height: 3px;
+  background: var(--primary-font-color);
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
-/* subscription.html */
+/* Hide the navigation menu by default */
+#myNav-list {
+  display: none;
+}
+
+/* Adjust this style for small screens (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  /* Hide the navigation menu initially */
+  #myNav-list {
+    display: none;
+  }
+
+  /* Show the navigation menu when the button is clicked */
+  #menu-button.active + #myNav-list {
+    display: flex;
+    flex-direction: column; /* Stack navigation items vertically */
+    gap: 10px; /* Add spacing between navigation items */
+  }
+}
+
 
 #subscription-section {
     display: flex; 
@@ -642,7 +662,7 @@ h3{
 
   .plan {
     width: 300px;
-    height: 650px;
+    height: 500px;
     padding: 20px;
     background-color: rgb(234, 233, 233);
     border-radius: 10px;
@@ -657,14 +677,12 @@ h3{
     justify-content: center;
     margin-left: 5px;
     font-weight: bold;
-    line-height: 2;
 
   }
 
   .plan-list{
     margin-left: 15px;
     font-size: 16px;
-    line-height: 1.8;
   }
 
   .plan-price {
@@ -713,63 +731,3 @@ h3{
     margin-left: 75px;
     font-size: 38px;
   }
-
-.contact-cap {
-    margin-left: 50px;
-  }
-
-  h6 {
-    color: #000;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%; /* 36px */
-  }
-
-  .form-input {
-    display: block;
-  }
-
-  #inputbox {
-    height: 70px;
-    padding-left: 15px;
-    width: 500px;
-    flex-shrink: 0;
-    border: 1.5px solid #000;
-  }
-
-  #messbox {
-    height:200px;
-    padding-left: 15px;
-    padding-top: 15px;
-    width: 500px;
-    flex-shrink: 0;
-    border: 1.5px solid #000;
-  }
-  /* contact-cap button */
-  #contactButton {
-    display: flex;
-    width: 174px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    background: #26B24D;
-    color: #fff;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin: 10px auto;
-    margin-left: 20px;
-  }
-
-  #purpose {
-    height:70px;
-    padding-left: 15px;
-    width: 500px;
-    flex-shrink: 0;
-    border: 1.5px solid #000;
-  }
-
-
