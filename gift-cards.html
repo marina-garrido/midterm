@@ -177,20 +177,27 @@
 </head>
 <body>
   <header>
-    <header>
-        <div class="nav-content">
-          <img class="about-img" src="images/logo.png" width="20%">
-          <nav class="nav-list" id="myNav-list">
-            <a class="nav-item" href="index.html">Home</a>
-            <a class="nav-item" href="catalog.html">Catalog</a>
-            <a class="nav-item" href="subscription.html">Subscription</a>
-            <a class="nav-item" href="brewguide.html">Brew Guide</a>
-            <a class="nav-item" href="gift-cards.html">Gift Cards</a>
-            <a class="nav-item" href="contact.html">Contact Us</a>
-            <a class="nav-item" href="cart.html">Cart</a>
-          </nav>
-        </div>
-      </header>
+    <div class="nav-content">
+      <a href="index.html" class="header-logo-link">
+        <img src="images/logo.png" alt="Our logo" class="header-logo">
+      </a>
+
+      <button id="menu-button">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+
+      <nav class="nav-list" id="myNav-list">
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="catalog.html">Catalog</a>
+        <a class="nav-item" href="subscription.html">Subscription</a>
+        <a class="nav-item" href="brewguide.html">Brew Guide</a>
+        <a class="nav-item" href="gift-cards.html">Gift Cards</a>
+        <a class="nav-item" href="contact.html">Contact Us</a>
+        <a class="nav-item" href="cart.html">Cart</a>
+      </nav>
+    </div>
   </header>
 
 
@@ -301,7 +308,7 @@ const checkoutButton = document.getElementById('checkoutButton');
     
   </script>
   
-<footer>
+  <footer>
     <div class="footer-main">
       <div class="left-column">
         <div class="subscribe" style="width: 431px; height: 94px;">
@@ -317,13 +324,14 @@ const checkoutButton = document.getElementById('checkoutButton');
       </div>
       <div class="right-column">
         <div class="footer-nav">
-            <a href="/midterm/index.html">Home</a>
-            <a href="/midterm/catalog.html">Catalog</a>
-            <a href="/midterm/subscription.html">Subscription</a>
-            <a href="/midterm/brew-guide.html">Brew Guide</a>
-            <a href="/midterm/gift-cards.html">Gift Cards</a>
-            <a href="/midterm/contact.html">Contact Us</a>
-            <a href="/midterm/cart.html">Cart</a>
+          <a href="index.html">Home</a>
+          <a href="catalog.html">Catalog</a>
+          <a href="subscription.html">Subscription</a>
+          <a href="brewguide.html">Brew Guide</a>
+          <a href="gift-cards.html">Gift Cards</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="cart.html">Cart</a>
+        </div>
       </div>
     </div>
   </footer>

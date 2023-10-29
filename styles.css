@@ -15,11 +15,15 @@ body {
 
 /* Index.html */
 
-.about-img {
-  max-width: 40%;
+.header-logo-link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header-logo {
+  max-width: 30%;
   height: auto;
-  margin-bottom: 0; /* Reduce the margin to 0 */
-  margin-bottom: 20px; /* Add margin to the top */
 }
 
 header {
