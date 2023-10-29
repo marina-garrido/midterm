@@ -146,7 +146,6 @@ header {
   display: flex;
   align-items: center;
   color: #fff;
-/*   padding-left: 10%; */
 }
 
 .text-overlay {
@@ -161,6 +160,7 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+  margin-left: 0px;
 }
 
 .text-overlay p {
@@ -309,7 +309,6 @@ footer {
   margin: 10px 0;
   flex: 1; 
 }
-
 
 .left-column {
   flex: 1;
@@ -556,7 +555,7 @@ h2{
   margin-top: -20px;
 }
 
-.brewguide-overlay h2{
+.brewguide-overlay h1{
   font-size: 50px;
 }
 
@@ -574,7 +573,7 @@ h2{
   line-height: 30px;
 }
 
-.brewtype-details h3{
+.brewtype-details h2{
   margin-left: -30px;
   margin-bottom: 30px;
 }
@@ -764,6 +763,8 @@ h2{
     font-size: 38px;
   }
 
+  /* aboutus.html */
+
   .aboutUs {
     display: flex; 
     flex-direction: column; 
@@ -781,7 +782,7 @@ h2{
     margin-bottom: 40px;
   }
   
-  .about-overlay h2 {
+  .about-overlay h1 {
     font-size: 50px;
   }
   
@@ -891,7 +892,7 @@ h2{
     font-size: 16px;
   }
 
-  /* Mobile-friendly css */
+  /* mobile-friendly css */
 
 @media screen and (max-width: 600px) {
   .about-img {
@@ -960,7 +961,7 @@ h2{
     padding-top: 0;
   }
 
-  #best-sellers-section h3 {
+  #best-sellers-section h2 {
     margin-left: 0;
     text-align: center;
     margin-top: 2rem;
@@ -1049,7 +1050,7 @@ h2{
     margin: 0;
   }
 
-  .allblend-container h3 {
+  .allblend-container h2 {
     font-size: 30px;
     margin-bottom: 2rem;
     margin-left: 0;
@@ -1075,11 +1076,11 @@ h2{
     margin-top: 15px;
   }
 
-  #subscription-overlay h2 {
+  #subscription-overlay h1 {
     font-size: 30px;
   }
 
-  .why-subscription-blurb h3 {
+  .why-subscription-blurb h2 {
     margin-top: 0;
   }
 
@@ -1099,7 +1100,7 @@ h2{
     margin: 0;
   }
 
-  .brewguide-overlay h2 {
+  .brewguide-overlay h1 {
     font-size: 40px;
   }
 
@@ -1112,7 +1113,7 @@ h2{
     padding: 50px;
   }
 
-  .brewtype-details h3 {
+  .brewtype-details h2 {
     margin: 0;
     font-size: 30px;
   }
@@ -1125,12 +1126,12 @@ h2{
     margin: 0 15px 40px;
   }
 
-  .about-overlay h2 {
-    font-size: 38px;
+  .about-overlay h1 {
+    font-size: 50px;
   }
 
   .about-overlay p {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   #testimonials-section, #history, #teamContainer {
