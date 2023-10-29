@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brazil Brew Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #gift-card {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+
+    .gift-card-content {
+        display: inline-block;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      height: 100vh;    }
+
+
+    .gift-card-title {
+      max-width: 80%;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      margin: 0 auto;
+    }
+
+    .gift-card-title h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: rgb(255, 255, 255);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .gift-card-title p {
+      font-size: 18px;
+      color: rgb(255, 255, 255);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .gift-card-image {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    #gift-card .gift-card-content {
+      flex: 1;
+      padding: 20px;
+      text-align: center
+    }
+
+    #gift-card .gift-card-title {
+      text-align: center;
+      max-width: 80%;
+      font-size: 28px;
+      margin: 0 auto;
+    }
+
+    #giftCardForm {
+      width: 50%;
+      text-align: left;
+      padding: 20px;
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+
+    #giftCardForm label,
+    #giftCardForm input,
+    #giftCardForm button {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    #giftCardForm button {
+      background-color: var(--primary);
+      color: var(--negative-title-color);
+      padding: 10px;
+      border: none;
+      margin-top: 30px;
+      margin-bottom: 100px;
+      cursor: pointer;
+    }
+
+    #giftCardText {
+      width: 45%;
+      text-align: left;
+      padding: 20px;
+    }
+    
+    #gift-card-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    #giftCardForm h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #26B24D;
+    margin-bottom: 10px;
+    text-align: left;
+    }
+    .left-side {
+    width: 45%;
+    text-align: left;
+    padding: 20px;
+    }
+
+    .right-side {
+    width: 45%;
+    text-align: left;
+    padding: 20px;
+    }
+
+    .centered-image {
+    text-align: center;
+    }
+
+    .centered-image img {
+    max-width: 100%;
+    height: auto;
+    }
+
+    #gift-card-title {
+    z-index: 1;
+    position: relative;
+    }
+
+    #background-section {
+    background: url('gift-card.jpg');
+    background-size: cover;
+    height: 500px;  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    }
+
+    #giftCardForm button:hover {
+        background-color: #3fd169;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <header>
+        <div class="nav-content">
+          <img class="about-img" src="images/logo.png" width="20%">
+          <nav class="nav-list" id="myNav-list">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item" href="catalog.html">Catalog</a>
+            <a class="nav-item" href="subscription.html">Subscription</a>
+            <a class="nav-item" href="brewguide.html">Brew Guide</a>
+            <a class="nav-item" href="gift-cards.html">Gift Cards</a>
+            <a class="nav-item" href="contact.html">Contact Us</a>
+            <a class="nav-item" href="cart.html">Cart</a>
+          </nav>
+        </div>
+      </header>
+  </header>
+
+
+  <section id="background-section">
+    <div class="gift-card-title">
+      <h1>WANT TO GIVE A GIFT TO A LOVED ONE OR FRIEND?</h1>
+      <p>Gift the essence of Brazil with our coffee farmers' story in a cup. Our gift card offers a taste of genuine connection, supporting local farmers and brewing purposeful moments.</p>
+    </div>
+  </section>
+
+
+  <section id="gift-card-form">
+    <div id="giftCardForm" class="left-side">
+        <h1>BREW GIFT CARD</h1>
+      <form>
+        <label for="recipientEmail">Recipient's Email:</label>
+        <input type="email" id="recipientEmail" name="recipientEmail" required>
+
+        <label for="giftAmount">Gift Card Amount:</label>
+        <select id="giftAmount" name="giftAmount">
+          <option value="15">$15</option>
+          <option value="20">$20</option>
+          <option value="25">$25</option>
+          <option value="25">$30</option>
+        </select>
+        <label for="giftNote">Add a Special Note:</label>
+        <textarea id="giftNote" name="giftNote" rows="5" cols="92"></textarea>
+        <button type="submit">Checkout</button>
+      </form>
+    </div>
+
+    <div id="giftCardText" class="right-side">
+      <p>Brazil Brew Co. gift cards are the perfect gift for the coffee aficionado in your life, on any occasion.</p> <br>
+      <p>*Please note that our gift cards are intended for online use. You can redeem them on our website for a wide range of coffee products and subscriptions. Enjoy the convenience of gifting coffee from the comfort of your home!</p>
+    </div>
+  </section>
+
+  
+  <script>
+    document.getElementById('giftCardForm').addEventListener('submit', function (e) {
+    e.preventDefault(); 
+
+    const recipientEmail = document.getElementById('recipientEmail').value;
+    const giftAmount = document.getElementById('giftAmount').value;
+
+    alert(`Recipient's Email: ${recipientEmail}\nGift Card Amount: $${giftAmount}`);
+    });
+  </script>
+
+<footer>
+    <div class="footer-main">
+      <div class="left-column">
+        <div class="subscribe" style="width: 431px; height: 94px;">
+          <p>Subscribe to get emails about our new products and sales!</p>
+          <div class="subscription-form">
+            <input type="email" placeholder="Enter email">
+            <button class="subscribe-button">Subscribe</button>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 Brazil Brew Co. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="footer-nav">
+            <a href="/midterm/index.html">Home</a>
+            <a href="/midterm/catalog.html">Catalog</a>
+            <a href="/midterm/subscription.html">Subscription</a>
+            <a href="/midterm/brew-guide.html">Brew Guide</a>
+            <a href="/midterm/gift-cards.html">Gift Cards</a>
+            <a href="/midterm/contact.html">Contact Us</a>
+            <a href="/midterm/cart.html">Cart</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
