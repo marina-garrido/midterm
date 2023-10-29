@@ -376,6 +376,10 @@ footer {
   color: #fff;
 }
 
+.subscription-form input[type="email"]::placeholder {
+  color: white;
+}
+
 .subscribe-button {
   width: 30%;
   padding: 10px;
@@ -751,6 +755,108 @@ h3{
     margin-top: 70px;
     margin-left: 75px;
     font-size: 38px;
+  }
+
+  #history {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #history img {
+    width: 40%;
+    margin-left: 3rem;
+  }
+
+  .history-container {
+    width: 60%;
+  }
+
+  #history h3 {
+    font-size: 30px;
+    margin-top: 50px;
+    color: #3D5A98;
+  }
+
+  .topic p {
+    font-size: 17px;
+    margin-top: 10px;
+  }
+
+  .topic p span {
+    font-style: italic;
+  }
+
+  #testimonials-section, #history, #teamContainer{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #testimonials-section h2, #history h2, #teamContainer h2 {
+    font-size: 38px;
+  }
+
+  .testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+  }
+
+  .testimonial {
+    height: 250px;
+    width: 500px;
+    margin: auto 1rem;
+    padding: 2rem;
+    border: var(--primary) 2px solid;
+    border-radius: 20px;
+  }
+
+  .testimonial:hover {
+    border-color: #3D5A98;
+    transition: all 0.5s ease;
+  }
+
+  .testimonial p:first-child {
+    font-style: italic;
+    font-size: 18px;
+  }
+
+  .testimonial-author {
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  #team-members {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .member {
+    height: 200px;
+    width: 250px;
+    border: var(--primary) 2px solid;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .memberName {
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  .memberRole {
+    font-size: 17px;
+    color: #3D5A98;
+  }
+
+  .memberBio {
+    margin-top: 5px;
+    font-size: 16px;
   }
 
   /* Mobile-friendly css */
