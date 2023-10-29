@@ -434,7 +434,7 @@ background-color: var(--primary);
 color: #FFF; 
 }
 
-/* Catalog.html (I haven't made it mobile responsive yet)*/
+/* Catalog.html */
 
 #catalog-section{
   display: flex; 
@@ -539,32 +539,46 @@ h3{
   color: white;
 }
 
-
-#brewguide-overlay{
+.brewguide-overlay{
   display: flex; 
   flex-direction: column;
   gap: 15px;
   margin: 0 200px;
 }
 
-#brewguide-overlay h2{
+.brewguide-overlay h2{
   font-size: 50px;
 }
 
-#brewguide-overlay p{
+.brewguide-overlay p{
   font-size: 18px;
 }
 
-#brewtype{
+.brewtype{
   display: flex;
 }
 
-#brewtype-details{
-  flex-grow: 2;
+.brewtype-details{
+  flex: 2;
+  padding: 80px;
+  line-height: 30px;
 }
 
-#brewtype-img{
-  flex-grow: 1;
+.brewtype-details h3{
+  margin-left: -30px;
+  margin-bottom: 30px;
+}
+
+.brewtype-details p{
+  margin-left: -30px;
+  margin-top: 10px;
+}
+
+.brewtype-img{
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  padding: 80px; 
 }
 
 #menu-button {
@@ -589,9 +603,153 @@ h3{
   display: flex;
 }
 
-/*
-  Mobile-friendly css
-*/
+/* subscription.html */
+
+#subscription-section {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    color: white;
+  }
+
+  #subscription-overlay {
+    display: flex; 
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 200px;
+  }
+
+  #subscription-overlay h2 {
+    font-size: 50px;
+  }
+  
+  #subscription-overlay p {
+    font-size: 18px;
+  }
+
+  .sub-cap {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .subscribe-first{
+    display: flex;
+    margin-top: 30px;
+    padding: 40px;
+  }
+
+  .why-subscription-blurb {
+    flex: 2;
+    padding: 0 30px;
+  }
+
+  .why-subscription-blurb h3{
+    margin-left: -10px;
+    margin-bottom: 30px;
+  }
+
+  .why-subscription-blurb p{
+    margin-right: 150px;
+  }
+
+  .why-sub-text {
+    font-size: 20px;
+    color: black;
+    line-height: 150%;
+    margin-bottom: 10px;
+  }
+
+  .sub-img {
+    flex: 1;
+    max-height: 400px;
+    max-width: 400px;
+  }
+
+  .plan-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 150px;
+  }
+
+  .plan {
+    width: 400px;
+    height: 600px;
+    padding: 40px;
+    background-color: rgb(234, 233, 233);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+
+  .plan-text-h {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    justify-content: center;
+    margin-left: -20px;
+    margin-top: 20px;
+    font-weight: bold;
+
+  }
+
+  .plan-list{
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .plan-price {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  h4 {
+    margin-top: 40px;
+    margin-left: 45px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 51px */
+  }
+
+  h5 {
+    color: #26B24D;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 48px */
+  }
+
+  .plan button {
+    display: flex;
+    width: 174px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: #26B24D;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 10px auto;
+  }
+
+  h3{
+    margin-top: 70px;
+    margin-left: 75px;
+    font-size: 38px;
+  }
+
+  /* Mobile-friendly css */
 
 @media screen and (max-width: 600px) {
   .about-img {
@@ -749,148 +907,8 @@ h3{
     margin-right: 10px;
   }
 
+
   .brewguide-overlay {
     padding: 30px;
   }
 }
-
-
-#subscription-section {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center; 
-    text-align: center;
-    color: white;
-  }
-
-  #subscription-overlay {
-    display: flex; 
-    flex-direction: column;
-    gap: 15px;
-    margin: 0 200px;
-  }
-
-  #subscription-overlay h2 {
-    font-size: 50px;
-  }
-  
-  #subscription-overlay p {
-    font-size: 18px;
-  }
-
-  .sub-cap {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  .why-sub-text {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    color: black;
-    line-height: 150%;
-    margin-bottom: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  #why-subscription-blurb {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .sub-img {
-    margin-right: 50px;
-
-  }
-
-  #beans-subscribe {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 56px 0px 81px 20px;
-  }
-
-  .plan-container {
-    display: flex;
-    justify-content: center;
-    gap: 150px;
-  }
-
-  .plan {
-    width: 400px;
-    height: 550px;
-    padding: 30px;
-    background-color: rgb(234, 233, 233);
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left;
-  }
-
-  .plan-text-h {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    justify-content: center;
-    margin-left: -10px;
-    margin-top: 20px;
-    font-weight: bold;
-
-  }
-
-  .plan-list{
-    margin-left: 15px;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .plan-price {
-    margin-top: 5px;
-    text-align: center;
-    font-weight: bold;
-  }
-
-  h4 {
-    margin-top: 40px;
-    margin-left: 45px;
-    color: #000;
-    font-family: Montserrat;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%; /* 51px */
-  }
-
-  h5 {
-    color: #26B24D;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%; /* 48px */
-  }
-
-  .plan button {
-    display: flex;
-    width: 174px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    background: #26B24D;
-    color: #fff;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin: 10px auto;
-  }
-
-  h3{
-    margin-top: 70px;
-    margin-left: 75px;
-    font-size: 38px;
-  }
