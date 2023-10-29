@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
-    html, body {
+   html, body {
       margin: 0;
       padding: 0;
     }
@@ -88,6 +88,20 @@
       display: block;
       margin-bottom: 10px;
       width: 100%;
+    }
+
+    .submit-button-pay {
+        background-color: var(--primary);
+      color: var(--negative-title-color);
+      padding: 10px;
+      border: none;
+      margin-top: 30px;
+      margin-bottom: 100px;
+      cursor: pointer;
+    }
+
+    .submit-button-pay:hover {
+    background-color: #3fd169;
     }
 
     .custom-button {
@@ -201,7 +215,7 @@
   </header>
 
 
-  <section id="background-section" height=500p width=100%;>
+   <section id="background-section" height=500p width=100%;>
     <div class="gift-card-title">
       <h1>GIFT CARDS</h1>
       <p>Gift the essence of Brazil with our coffee farmers' story in a cup. Our gift card offers a taste of genuine connection, supporting local farmers and brewing purposeful moments.</p>
@@ -257,56 +271,86 @@
       <textarea id="billingAddress" name="billingAddress" rows="5" cols="92" required></textarea>
 
       <button class="custom-button" type="button" id="submitPaymentButton">Submit</button>
-
     </form>
   </section>
 
   <script>
+    const checkoutButton = document.getElementById('checkoutButton');
+    const recipientEmailInput = document.getElementById('recipientEmail');
+    const submitPaymentButton = document.getElementById('submitPaymentButton');
+    const paymentForm = document.getElementById('paymentForm');
+  
+    checkoutButton.addEventListener('click', function () {
+      if (recipientEmailInput.checkValidity()) {
+        paymentForm.style.display = 'block'; // Show the payment form
+      } else {
+        alert('Please fill in a valid email address.');
+      }
+    });
+  
+    // Create the button element
+    const submitButton = document.createElement('button');
+    submitButton.textContent = 'Submit';
+    submitButton.classList.add('custom-button'); // Add the class
+  
+    // Add a click event listener to the button
+    submitButton.addEventListener('click', function() {
+      // Check if all required fields are filled
+      if (isPaymentFormValid()) {
+        alert('Your gift card was emailed to the recipient!');
+        resetForms();
+      } else {
+        alert('Please fill in all required fields.');
+      }
+    });
+  
+    submitPaymentButton.addEventListener('click', function () {
+  // Check if all required fields are filled
+    if (isPaymentFormValid()) {
+        alert('Your gift card was emailed to the recipient!');
 
-const checkoutButton = document.getElementById('checkoutButton');
-  const paymentForm = document.getElementById('paymentForm');
-  const recipientEmailInput = document.getElementById('recipientEmail'); // Get the email input element
-  const giftCardForm = document.querySelector('#giftCardForm form'); // Get the gift card form
+        setTimeout(function () {
+        // Reset the gift card form
+        const giftCardForm = document.getElementById('giftCardForm').querySelector('form');
+        giftCardForm.reset();
 
-  checkoutButton.addEventListener('click', function () {
-    if (recipientEmailInput.checkValidity()) {
-      paymentForm.style.display = 'block';
+        // Reset the payment form
+        const paymentForm = document.getElementById('paymentForm').querySelector('form');
+        paymentForm.reset();
+        }, 100); // Introduce a slight delay (e.g., 100 milliseconds) to ensure the alert is processed first
     } else {
-      alert('Please fill in a valid email address.');
+        alert('Please fill in all required fields.');
     }
-  });
-    
+    });
+
 
   
-    paymentForm.innerHTML = `
-      <h1>Payment Information</h1>
-      <form>
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required>
+    // Initially hide the payment form
+    paymentForm.style.display = 'none';
   
-        <label for "lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required>
+    // Function to check if all required fields are filled
+    function isPaymentFormValid() {
+      const requiredFields = document.querySelectorAll('#paymentForm [required]');
+      for (const field of requiredFields) {
+        if (!field.value) {
+          return false;
+        }
+      }
+      return true;
+    }
   
-        <label for="cardNumber">Credit Card Number:</label>
-        <input type="text" id="cardNumber" name="cardNumber" required>
+    // Function to reset form fields
+    function resetForms() {
+      // Reset the gift card form
+      const giftCardForm = document.getElementById('giftCardForm');
+      giftCardForm.reset();
   
-        <label for="cvv">CVV:</label>
-        <input type="number" id="cvv" name="cvv" required>
-  
-        <label for="cardDate">Expiration Date:</label>
-        <input type="month" id="cardDate" name="cardDate" required>
-  
-        <label for="billingAddress">Billing Address:</label>
-        <textarea id="billingAddress" name="billingAddress" rows="5" cols="92" required></textarea>
-  
-        <button type="submit">Submit</button>
-      </form>
-    `;
-  
-    paymentSection.appendChild(paymentForm);
-    checkoutButton.insertAdjacentElement('afterend', paymentSection);
-    
+      // Reset the payment form
+      const paymentForm = document.getElementById('paymentForm').querySelector('form');
+      paymentForm.reset();
+    }
   </script>
+  
   
   <footer>
     <div class="footer-main">
