@@ -844,9 +844,11 @@ h3{
   .plan-list{
     margin-left: 15px;
     font-size: 16px;
+    line-height: 1.5;
   }
 
   .plan-price {
+    margin-top: 5px;
     text-align: center;
     font-weight: bold;
   }
