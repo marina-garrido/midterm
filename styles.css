@@ -192,7 +192,7 @@ header {
   text-align: center;
 }
 
-#best-sellers-section h3 {
+#best-sellers-section h2 {
   font-size: 38px;
   text-align: left;
   margin-left: 150px;
@@ -462,7 +462,7 @@ color: #FFF;
   margin-bottom: 40px;
 }
 
-#catalog-overlay h2{
+#catalog-overlay h1{
   font-size: 50px;
 }
 
@@ -477,7 +477,7 @@ color: #FFF;
   margin-bottom: 70px;
 }
 
-h3{
+h2{
   margin-top: 70px;
   margin-left: 75px;
   font-size: 38px;
@@ -631,7 +631,7 @@ h3{
     margin: 0 200px;
   }
 
-  #subscription-overlay h2 {
+  #subscription-overlay h1 {
     font-size: 50px;
   }
   
@@ -655,7 +655,7 @@ h3{
     padding: 0 30px;
   }
 
-  .why-subscription-blurb h3{
+  .why-subscription-blurb h2{
     margin-left: -10px;
     margin-bottom: 30px;
   }
