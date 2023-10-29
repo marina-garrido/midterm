@@ -549,6 +549,7 @@ h3{
   flex-direction: column;
   gap: 15px;
   margin: 0 200px;
+  margin-top: -20px;
 }
 
 .brewguide-overlay h2{
