@@ -20,6 +20,8 @@
     margin: 0;
   }
 
+  /* header */ 
+
   .header-logo-link {
     display: flex;
     justify-content: center;
@@ -72,79 +74,174 @@
   color: #5BB079; 
   font-weight: 600;
 }
-  
-  footer {
-    background-color: #3D5A98;
-    height: 300px;
-    padding: 16px 0;
-    color: #fff;
-    font-size: 14px;
-    line-height: 24px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
 
-  }
-  
-  .footer-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* footer */
 
-  }
-  
-  .footer-main::before {
-    content: "";
-    border-top: 1px solid #FFF;
-    margin: 20px 0;
-    display: block;
-  }
-  
-  
-  .footer-main p {
-    margin: 10px 0;
-    flex: 1; 
-  }
-  
-  
-  .left-column {
-    flex: 1;
-    margin-left: 100px; 
-  }
-  
-  .right-column {
-    flex: 1; 
-    margin-left: 100px;
+footer {
+  background-color: #3D5A98;
+  height: 300px;
+  padding: 16px 0;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 
-  }
-  
-  /* Styling for the navigation list */
-  .footer-nav ul {
-    list-style: none;
-    padding: 0;
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  }
-  
-  .footer-nav li {
-    margin-bottom: 10px; /* Adjust the spacing between list items */
-  }
-  
-  .footer-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-  }
-  
-  .footer-nav a {
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    margin-right: 25px;
-    color: #FFF;
-    flex-basis: 45%; /* Adjust the width of each column as needed */
-  }
-  
+.footer-main::before {
+  content: "";
+  border-top: 1px solid #FFF;
+  margin: 20px 0;
+  display: block;
+}
+
+
+.footer-main p {
+  margin: 10px 0;
+  flex: 1; 
+}
+
+
+.left-column {
+  flex: 1;
+  margin-left: 100px; 
+}
+
+.right-column {
+  flex: 1; 
+  margin-left: 100px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 10px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+
+.footer-nav a {
+  text-decoration: none;
+  margin-right: 25px;
+  color: #FFF;
+  flex-basis: 45%;
+}
+
+.subscribe {
+  width: 431px; 
+  height: 94px; 
+  margin-left: 100px;
+  flex-shrink: 0;
+}
+
+.subscribe p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #fff;
+  margin-top: 56px;
+  margin-bottom: 20px;
+}
+
+.subscription-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.subscription-form input {
+  width: 70%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 20px; 
+  background-color: transparent;
+  color: #fff;
+}
+
+.subscription-form input[type="email"]::placeholder {
+  color: white;
+}
+
+.subscribe-button {
+  width: 30%;
+  padding: 10px;
+  background-color: #FD5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; 
+}
+
+.subscribe-button:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.copyright {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.service {
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.content {
+display: flex;
+align-items: center;
+}
+
+.service img {
+max-width: 100%;
+height: auto;
+margin-right: 20px; 
+}
+
+.text-container {
+flex: 1;
+}
+
+.my-contain {
+max-width: 100%;
+margin: 0 auto; 
+}
+
+.nav-item:hover {
+  color: #5BB079; 
+  font-weight: 600;
+}
+
+.about-button:hover,
+.footer-button:hover,
+.services-button:hover,
+.contact-button:hover,
+.cta-btn:hover {
+background-color: var(--primary); 
+color: #FFF; 
+}
+
+
   #contact-section {
     display: flex; 
     flex-direction: column; 
@@ -285,6 +382,7 @@
     transition: all 0.3s ease;
   }
 
+<<<<<<< HEAD
   .subscription-form input {
     width: 70%;
     padding: 10px;
@@ -311,6 +409,8 @@
     font-family: 'Montserrat', sans-serif;
   }
 
+=======
+>>>>>>> refs/remotes/origin/main
   @media screen and (max-width: 600px) {
     .about-img {
       width: 30%;
