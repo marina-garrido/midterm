@@ -188,6 +188,36 @@
       margin-bottom: 10px;
     }
 
+    @media screen and (max-width: 600px) {
+      .gift-card-title {
+        margin: 0;
+      }
+
+      #gift-card-form {
+        flex-direction: column;
+      }
+
+      #giftCardForm {
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+
+      #giftAmount {
+        margin-bottom: 15px;
+      }
+
+      #giftNote {
+        width: 360px;
+      }
+
+      #giftCardText {
+        width: 100%;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -276,6 +306,12 @@
   </section>
 
   <script>
+    const menuButton = document.getElementById('menu-button');
+
+    menuButton.addEventListener('click', function () {
+    this.classList.toggle('active');
+    });
+
     const checkoutButton = document.getElementById('checkoutButton');
     const recipientEmailInput = document.getElementById('recipientEmail');
     const submitPaymentButton = document.getElementById('submitPaymentButton');

@@ -753,10 +753,40 @@ h3{
     margin: 10px auto;
   }
 
+  .plan button:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+
   h3{
     margin-top: 70px;
     margin-left: 75px;
     font-size: 38px;
+  }
+
+  .aboutUs {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    color: white;
+  }
+  
+  .about-overlay {
+    display: flex; 
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 200px;
+    margin-bottom: 40px;
+  }
+  
+  .about-overlay h2 {
+    font-size: 50px;
+  }
+  
+  .about-overlay p {
+    font-size: 18px;
   }
 
   #history {
@@ -911,6 +941,15 @@ h3{
 
   .text-overlay {
     width: 100%;
+    margin-left: 0;
+  }
+
+  .text-overlay h2 {
+    font-size: 30px;
+  }
+
+  .text-overlay p {
+    font-size: 15px;
   }
 
   #best-sellers-section {
@@ -918,17 +957,24 @@ h3{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 0;
+    padding-top: 0;
   }
 
   #best-sellers-section h3 {
     margin-left: 0;
     text-align: center;
+    margin-top: 2rem;
+    font-size: 30px;
   }
 
   .product-container {
-    display: block;
-    margin-left: 6.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .shop-all-button {
+    margin-top: 0;
   }
 
   .product {
@@ -992,17 +1038,22 @@ h3{
   }
 
   .allblend-container {
-    gap: 0;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .darkblend, .mediumblend, .lightblend {
-    margin-left: 4.5rem;
-    margin-bottom: 2.5rem;
+    margin: 0;
   }
 
   .allblend-container h3 {
     font-size: 30px;
     margin-bottom: 2rem;
+    margin-left: 0;
+    margin-top: 2rem;
   }
 
   #beans-subscribe {
@@ -1010,17 +1061,134 @@ h3{
     text-align: center;
   }
 
+  .sub-cap {
+    margin: 0;
+  }
+
   .sub-img {
     width: 0;
     margin-right: 0;
   }
 
-  .why-subscription-blurb {
-    margin-right: 10px;
+  .subscribe-first {
+    flex-direction: column;
+    margin-top: 15px;
   }
 
+  #subscription-overlay h2 {
+    font-size: 30px;
+  }
+
+  .why-subscription-blurb h3 {
+    margin-top: 0;
+  }
+
+  .why-subscription-blurb p {
+    margin-right: 0;
+  }
+
+  .plan-container {
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 30px;
+  }
 
   .brewguide-overlay {
     padding: 30px;
+    margin: 0;
+  }
+
+  .brewguide-overlay h2 {
+    font-size: 40px;
+  }
+
+  .brewtype {
+    flex-direction: column;
+  }
+
+  .brewtype-details {
+    padding: 50px;
+  }
+
+  .brewtype-details h3 {
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .brewtype-img {
+    padding: 0;
+  }
+
+  .about-overlay {
+    margin: 0 15px 40px;
+  }
+
+  .about-overlay h2 {
+    font-size: 38px;
+  }
+
+  .about-overlay p {
+    font-size: 15px;
+  }
+
+  #testimonials-section, #history, #teamContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .history-container {
+    width: 90%;
+  }
+
+  #history {
+    flex-direction: column;
+  }
+
+  #testimonials-section h2, #history h2, #teamContainer h2 {
+    font-size: 30px;
+  }
+
+  #history h3 {
+    margin-left: 0;
+    font-size: 25px;
+  }
+
+  .topic p {
+    font-size: 15px;
+  }
+
+  #history img {
+    margin-left: 0;
+    width: 0;
+    margin-bottom: 2rem;
+  }
+
+  .testimonials {
+    margin-top: 1.5rem;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .testimonial {
+    height: 200px;
+    width: 350px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonial p:first-child {
+    font-size: 15px;
+  }
+
+  #team-members{
+    flex-direction: column;
+  }
+
+  .member {
+    width: 350px;
+    height: 150px;
+    margin-bottom: 1.5rem;
   }
 }
