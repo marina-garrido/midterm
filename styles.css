@@ -153,6 +153,7 @@ header {
   width: 50%;
   box-sizing: border-box;
   text-align: left;
+  margin-left: 50px;
 }
 
 .text-overlay h2 {
@@ -160,7 +161,6 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
-  margin: 0;
 }
 
 .text-overlay p {
@@ -455,6 +455,7 @@ color: #FFF;
   flex-direction: column;
   gap: 15px;
   margin: 0 200px;
+  margin-bottom: 40px;
 }
 
 #catalog-overlay h2{
