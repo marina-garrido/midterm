@@ -38,12 +38,15 @@
     padding: 15px 0; /* Adjust the padding to reduce the gap */
   }
 
+<<<<<<< HEAD
   .nav-img {
   display: block;
   max-width: 150px;
   margin-bottom: 1px;
   }
 
+=======
+>>>>>>> refs/remotes/origin/main
 .nav-content {
   display: flex;
   flex-direction: column;
@@ -52,8 +55,19 @@
   text-decoration: none;
   width: 100%;
   max-width: 1440px;
+<<<<<<< HEAD
 }
 
+=======
+  font-family:'Montserrat', sans-serif;
+} 
+.nav-img {
+    display: block;
+    max-width: 150px;
+    margin-bottom: 1px;
+  }
+  
+>>>>>>> refs/remotes/origin/main
 .nav-list {
   display: flex;
   text-decoration: none;
@@ -145,70 +159,39 @@
     flex-basis: 45%; /* Adjust the width of each column as needed */
   }
   
-  
-  #subscription-section {
+  #contact-section {
     display: flex; 
     flex-direction: column; 
     justify-content: center;
     align-items: center; 
     text-align: center;
-    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/brewguidebanner.jpeg');
     font-family: 'Montserrat', sans-serif;
-
+    color: white;
   }
 
-  #subscription-overlay {
+  #contact-overlay {
     display: flex; 
     flex-direction: column;
-    flex-direction: column; 
     gap: 15px;
-
+    margin: 0 200px;
+    margin-top: -80px;
   }
 
-  #subscription-overlay h2 {
+  #contact-overlay h2 {
     font-size: 50px;
   }
   
-  #subscription-overlay p {
+  #contact-overlay p {
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-
+    margin-top: -40px;
   }
 
-  .sub-cap {
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  
   .about-img {
     max-width: 40%;
     height: auto;
     margin-bottom: 0; /* Reduce the margin to 0 */
     margin-bottom: 20px; /* Add margin to the top */
-  }
-  
-  
-  .nav-img {
-    display: block;
-    max-width: 150px;
-    margin-bottom: 1px;
-  }
-  
-  .nav-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1440px;
-  }
-  
-  
-  .nav-list {
-    display: flex;
-    gap: 2rem;
   }
   
   .contact-cap {
@@ -454,8 +437,8 @@
   </header>
 
   <main>
-    <section id="subscription-section" style="background-image: url('images/hand.jpg'); height: 500px;  width: 100%;">
-      <div id="subscription-overlay">
+    <section id="contact-section" style="background-image: url('images/hand.jpg'); height: 500px;  width: 100%;">
+      <div id="contact-overlay">
           <h2>CONTACT US</h2> 
           <p class="sub-cap">At BrazilBrew Co., we're passionate about our coffee, 
             and we're equally passionate about connecting with our customers. 
@@ -515,11 +498,9 @@
         alert("All sections must be filled out");
       }
       }
-
   </script>
   
 </body>
-
 <footer>
   <div class="footer-main">
     <div class="left-column">

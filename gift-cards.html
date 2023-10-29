@@ -22,39 +22,39 @@
     }
 
     .gift-card-content {
-        display: inline-block;
+      display: inline-block;
       align-items: center;
       text-align: center;
       justify-content: center;
-      height: 100vh;    }
-
-
-      .gift-card-title {
-        max-width: 80%;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        font-size: 50px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      height: 100vh;
     }
 
-        .gift-card-title h1 {
-        font-size: 50px;
-        font-weight: 700;
-        color: rgb(255, 255, 255);
-        margin: 0; /* Remove margin-left and margin-right */
+    #background-section{
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center;
+      align-items: center; 
+      text-align: center;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/brewguidebanner.jpeg');
+      color: white;
     }
 
-        .gift-card-title p {
-        font-size: 18px;
-        color: rgb(255, 255, 255);
-        margin: 0; /* Remove margin-left and margin-right */
+    .gift-card-title {
+      display: flex; 
+      flex-direction: column;
+      gap: 15px;
+      margin: 0 200px;
+      margin-top: -20px;
     }
 
+    .gift-card-title h2 {
+      font-size: 50px;
+    }
 
+    .gift-card-title p {
+      font-size: 18px;
+    }
+    
     .gift-card-image {
       width: 100%;
       height: 100vh;
@@ -129,6 +129,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 40px;
     }
 
     #giftCardForm h1 {
@@ -217,7 +218,7 @@
 
    <section id="background-section" height=500p width=100%;>
     <div class="gift-card-title">
-      <h1>GIFT CARDS</h1>
+      <h2>GIFT CARDS</h2>
       <p>Gift the essence of Brazil with our coffee farmers' story in a cup. Our gift card offers a taste of genuine connection, supporting local farmers and brewing purposeful moments.</p>
     </div>
   </section>
