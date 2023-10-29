@@ -26,30 +26,34 @@
       align-items: center;
       text-align: center;
       justify-content: center;
-      height: 100vh;    
+      height: 100vh;    }
+
+
+      .gift-card-title {
+        max-width: 80%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
-    .gift-card-title {
-      max-width: 80%;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      font-size: 50px;
-      margin: 0 auto;
+        .gift-card-title h1 {
+        font-size: 50px;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        margin: 0; /* Remove margin-left and margin-right */
     }
 
-    .gift-card-title h1 {
-      font-size: 50px;
-      font-weight: 700;
-      color: rgb(255, 255, 255);
-      text-align: center;
+        .gift-card-title p {
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        margin: 0; /* Remove margin-left and margin-right */
     }
 
-    .gift-card-title p {
-      font-size: 18px;
-      color: rgb(255, 255, 255);
-      text-align: center;
-    }
 
     .gift-card-image {
       width: 100%;
@@ -86,7 +90,7 @@
       width: 100%;
     }
 
-    #giftCardForm button {
+    .custom-button {
       background-color: var(--primary);
       color: var(--negative-title-color);
       padding: 10px;
@@ -95,6 +99,11 @@
       margin-bottom: 100px;
       cursor: pointer;
     }
+
+    .custom-button:hover {
+      background-color: #3fd169;
+    }
+
 
     #giftCardText {
       width: 45%;
@@ -115,6 +124,7 @@
     margin-bottom: 10px;
     text-align: left;
     }
+
     .left-side {
     width: 45%;
     text-align: left;
@@ -151,8 +161,16 @@
     color: #fff;
     }
 
-    #giftCardForm button:hover {
-        background-color: #3fd169;
+    #paymentForm {
+        display: none;
+        margin-left: 50px;
+    }
+
+    #paymentForm label,
+    #paymentForm input,
+    #paymentForm textarea {
+      display: block;
+      margin-bottom: 10px;
     }
 
   </style>
@@ -176,7 +194,7 @@
   </header>
 
 
-  <section id="background-section">
+  <section id="background-section" height=500p width=100%;>
     <div class="gift-card-title">
       <h1>GIFT CARDS</h1>
       <p>Gift the essence of Brazil with our coffee farmers' story in a cup. Our gift card offers a taste of genuine connection, supporting local farmers and brewing purposeful moments.</p>
@@ -200,7 +218,7 @@
         </select>
         <label for="giftNote">Add a Special Note:</label>
         <textarea id="giftNote" name="giftNote" rows="5" cols="92"></textarea>
-        <button type="submit">Checkout</button>
+        <button class="custom-button" id="checkoutButton" type="button">Checkout</button>
       </form>
     </div>
 
@@ -210,18 +228,79 @@
     </div>
   </section>
 
-  
+  <section id="paymentForm" class="left-side">
+    <h1>Payment Information</h1>
+    <form>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="cardNumber">Credit Card Number:</label>
+      <input type="text" id="cardNumber" name="cardNumber" required>
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" required>
+
+      <label for="cardDate">Expiration Date:</label>
+      <input type="month" id="cardDate" name="cardDate" required>
+
+      <label for="billingAddress">Billing Address:</label>
+      <textarea id="billingAddress" name="billingAddress" rows="5" cols="92" required></textarea>
+
+      <button class="custom-button" type="button" id="submitPaymentButton">Submit</button>
+
+    </form>
+  </section>
+
   <script>
-    document.getElementById('giftCardForm').addEventListener('submit', function (e) {
-    e.preventDefault(); 
 
-    const recipientEmail = document.getElementById('recipientEmail').value;
-    const giftAmount = document.getElementById('giftAmount').value;
+const checkoutButton = document.getElementById('checkoutButton');
+  const paymentForm = document.getElementById('paymentForm');
+  const recipientEmailInput = document.getElementById('recipientEmail'); // Get the email input element
+  const giftCardForm = document.querySelector('#giftCardForm form'); // Get the gift card form
 
-    alert(`Recipient's Email: ${recipientEmail}\nGift Card Amount: $${giftAmount}`);
-    });
+  checkoutButton.addEventListener('click', function () {
+    if (recipientEmailInput.checkValidity()) {
+      paymentForm.style.display = 'block';
+    } else {
+      alert('Please fill in a valid email address.');
+    }
+  });
+    
+
+  
+    paymentForm.innerHTML = `
+      <h1>Payment Information</h1>
+      <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+  
+        <label for "lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+  
+        <label for="cardNumber">Credit Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required>
+  
+        <label for="cvv">CVV:</label>
+        <input type="number" id="cvv" name="cvv" required>
+  
+        <label for="cardDate">Expiration Date:</label>
+        <input type="month" id="cardDate" name="cardDate" required>
+  
+        <label for="billingAddress">Billing Address:</label>
+        <textarea id="billingAddress" name="billingAddress" rows="5" cols="92" required></textarea>
+  
+        <button type="submit">Submit</button>
+      </form>
+    `;
+  
+    paymentSection.appendChild(paymentForm);
+    checkoutButton.insertAdjacentElement('afterend', paymentSection);
+    
   </script>
-
+  
 <footer>
     <div class="footer-main">
       <div class="left-column">
@@ -250,3 +329,4 @@
   </footer>
 </body>
 </html>
+
