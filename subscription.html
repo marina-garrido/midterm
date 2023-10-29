@@ -12,7 +12,47 @@
   <link rel="icon" href="images/logo.png" type="image/x-icon">
   
   <link rel="stylesheet" href="styles.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> 
   
+  <style> 
+    #paymentForm {
+    display: none;
+    margin-left: 50px;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+
+  #paymentForm label,
+  #paymentForm input,
+  #paymentForm textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  custom-button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--negative-title-color);
+    padding: 10px;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    cursor: pointer;
+  }
+
+  #paymentForm button:hover {
+    background-color: #3fd169;
+  }
+
+</style>
 </head>
 <body>
   <header>
@@ -79,7 +119,7 @@
                 </ul>
                 <br>
                 <p class="plan-price">$18.99/month</p>
-                <button>Add to Cart</button>
+                <button class="custom-button checkout-button" data-plan="1" id="checkoutButton1">Checkout</button>
 
             </div>
             <div class="plan">
@@ -99,15 +139,104 @@
                 </ul>
                 <br>
                 <p class="plan-price">$20.99/month</p>
-                <button>Add to Cart</button>
+                <button class="custom-button checkout-button" data-plan="2" id="checkoutButton2">Checkout</button>
             </div>
         </div>
         <br><br><br>
     </section>
 
+    <section id="paymentForm" class="left-side">
+        <h1>Payment Information</h1>
+        <form>
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+      
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required>
+      
+          <label for="cardNumber">Credit Card Number:</label>
+          <input type="text" id="cardNumber" name="cardNumber" required>
+      
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" required>
+      
+          <label for="cardDate">Expiration Date:</label>
+          <input type="month" id="cardDate" name="cardDate" required>
 
+          <label for="planSelect">Select Your Plan:</label>
+          <select id="planSelect" required>
+              <option value="Monthly">Plan 1</option>
+              <option value="Bi-weekly">Plan 2</option>
+          </select>
+          
+          <label for="preferredDeliveryDate">Select Preferred Delivery Date:</label>
+          <input type="month" id="preferredDeliveryDate" required>
+      
+          <label for="billingAddress">Billing Address:</label>
+          <textarea id="billingAddress" name="billingAddress" rows="5" cols="92" required></textarea>
+      
+          <button class="custom-button" type="button" id="submitPaymentButton">Submit</button>
+        </form>
+      </section>
 
+      <div id="confirmationMessage" style="display: none;">
+        <p>Subscription Confirmed! Thank you for choosing Brazil Brew Co. Your coffee is on its way to brighten your mornings.</p>
+    </div>
 
+    <script>
+         const menuButton = document.getElementById('menu-button');
+        menuButton.addEventListener('click', function () {
+        this.classList.toggle('active');
+        });
+
+        document.getElementById('checkoutButton1').addEventListener('click', function () {
+            displayPaymentForm(1);
+        });
+
+        document.getElementById('checkoutButton2').addEventListener('click', function () {
+            displayPaymentForm(2);
+        });
+      
+        const paymentForm = document.getElementById('paymentForm');
+        const confirmationMessage = document.getElementById('confirmationMessage');
+        const submitPaymentButton = document.getElementById('submitPaymentButton');
+      
+        function displayPaymentForm(plan) {
+          
+          document.getElementById('planSelect').value = (plan === 1) ? 'Plan 1' : 'Plan 2';
+      
+          confirmationMessage.style.display = 'none';
+      
+          // Show the payment form
+          paymentForm.style.display = 'block';
+        }
+
+        submitPaymentButton.addEventListener('click', function () {
+        if (isPaymentFormValid()) {
+            // Process the payment or submit the form as needed
+            setTimeout(function () {
+            alert('Subscription Confirmed! Thank you for choosing Brazil Brew Co. Your coffee is on its way to brighten your mornings.');
+            // Reset the payment form
+            document.getElementById('paymentForm').querySelector('form').reset();
+            }, 0);
+        } else {
+            alert('Please fill in all required fields.');
+        }
+        });
+
+        // Function to check if all required fields in the payment form are filled
+        function isPaymentFormValid() {
+          const requiredFields = document.querySelectorAll('#paymentForm [required]');
+          for (const field of requiredFields) {
+            if (!field.value) {
+              return false;
+            }
+          }
+          return true;
+        }
+
+      </script>
+      
     <footer>
       <div class="footer-main">
         <div class="left-column">
@@ -137,13 +266,7 @@
     </footer>  
 </main>
 
-<script>
-  const menuButton = document.getElementById('menu-button');
-
-  menuButton.addEventListener('click', function () {
-    this.classList.toggle('active');
-  });
-</script>
 </body>
 </html>
+    
     
