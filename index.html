@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Brazil Brew Co., Brazilian coffee, coffee beans, subscription, best coffee, sustainable, fair trade">
 
   <title>Brazil Brew Co.</title>
 
@@ -11,13 +12,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="styles.css">
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> <!-- Include jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery library -->
   
   <script>
     $(document).ready(function() {
       // Select the coffee bag image
       const coffeeBag = $('.coffee-bag');
 
+      // Add a fade-in effect to the coffee bag when the page loads
       coffeeBag.hide().fadeIn(1000); // You can adjust the duration (1000ms) as needed
     });
   </script>
@@ -127,7 +129,14 @@
       </div>
     </div>
   </footer>
-
+  
+  <script>
+    const menuButton = document.getElementById('menu-button');
+  
+    menuButton.addEventListener('click', function () {
+      this.classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>
