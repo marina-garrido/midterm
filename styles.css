@@ -82,11 +82,11 @@ header {
   }
 
   .location {
-    height: 250px;
-    width: 500px;
+    height: 100px;
+    width: 250px;
     margin: auto 1rem;
     padding: 2rem;
-    border: var(--primary) 2px solid;
+    border: black 2px solid;
     border-radius: 20px;
   }
 
