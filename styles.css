@@ -73,6 +73,23 @@ header {
   color: #39e169;
 }
 
+
+  .locations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+  }
+
+  .location {
+    height: 250px;
+    width: 500px;
+    margin: auto 1rem;
+    padding: 2rem;
+    border: var(--primary) 2px solid;
+    border-radius: 20px;
+  }
+
 #about {
   display: flex;
   align-items: center;
@@ -820,7 +837,7 @@ h2{
     font-style: italic;
   }
 
-  #testimonials-section, #history, #teamContainer{
+  #testimonials-section, #history, #teamContainer, #storeLocations{
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 50px;
