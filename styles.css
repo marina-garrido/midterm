@@ -77,16 +77,21 @@ header {
   .locations {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 4rem;
+    justify-content: center;
+    margin-top: 2rem;
   }
 
   .location {
-    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 200px;
     width: 250px;
-    margin: auto 1rem;
+    margin: auto 2rem;
     padding: 2rem;
-    border: black 2px solid;
+    border: #3D5A98 2px solid;
     border-radius: 20px;
   }
 
@@ -1151,7 +1156,7 @@ h2{
     font-size: 18px;
   }
 
-  #testimonials-section, #history, #teamContainer {
+  #testimonials-section, #history, #teamContainer, #storeLocations {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
@@ -1210,5 +1215,36 @@ h2{
     width: 350px;
     height: 150px;
     margin-bottom: 1.5rem;
+  }
+
+  #storeLocations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #storeLocations h2 {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+
+  .locations {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 10px;
+  }
+
+  .location {
+    height: 150px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .locations:nth-child(4) {
+    margin-bottom: 2rem;
   }
 }
